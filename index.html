@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stillwater is a private personal-finance app for understanding account balances, spending, and budgets.">
+  <meta name="theme-color" content="#315e46">
+  <title>Stillwater — A clearer view of your finances</title>
+  <style>
+    :root{color-scheme:light;--ink:#24352d;--green:#315e46;--muted:#5f6d58;--line:#dce3d6;--paper:#f7f8f4}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 'Segoe UI',system-ui,sans-serif}
+    a{color:var(--green);text-underline-offset:4px}a:focus-visible{outline:3px solid #739d65;outline-offset:5px}
+    .wrap{width:min(1080px,calc(100% - 48px));margin:auto}header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px 0;border-bottom:1px solid var(--line)}
+    .brand{font-size:28px;letter-spacing:-1px;font-weight:650;color:var(--green);text-decoration:none}.mark{font-size:39px;font-weight:400;vertical-align:-3px;margin-right:7px}nav a{font-size:14px;text-decoration:none}
+    .hero{padding:88px 0 72px;max-width:780px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:650}
+    h1{font-size:clamp(40px,6vw,68px);line-height:1.08;letter-spacing:-2.4px;font-weight:550;margin:22px 0}h2{font-size:29px;line-height:1.25;letter-spacing:-.7px;font-weight:550}h3{font-size:19px;font-weight:600;margin:0 0 12px}
+    .lead{font-size:20px;line-height:1.65;max-width:680px;color:var(--muted)}.badge{display:inline-block;border:1px solid var(--line);border-radius:30px;padding:7px 14px;font-size:13px;margin-top:14px;background:#edf2e9}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px;background:#fff;border:1px solid var(--line);border-radius:14px}.card p{margin:0;color:var(--muted)}.number{display:block;color:#60764e;font-size:12px;letter-spacing:1px;margin-bottom:30px}
+    .details{display:grid;grid-template-columns:1fr 1fr;gap:64px;padding:68px 0}.details p{color:var(--muted)}.details h2{margin-top:0}.contact{padding:34px;border:1px solid var(--line);border-radius:14px;background:#eaf0e3;margin-bottom:64px}.contact h2{margin:0 0 12px}.contact p{margin:8px 0}.email{overflow-wrap:anywhere;font-weight:600}
+    footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);font-size:13px}.skip{position:absolute;left:20px;top:-80px;background:white;padding:12px}.skip:focus{top:10px}
+    @media(max-width:700px){.wrap{width:calc(100% - 36px)}header{padding:20px 0}.hero{padding:58px 0 42px}.features,.details{grid-template-columns:1fr}.details{gap:28px;padding:44px 0}.card{padding:24px}.number{margin-bottom:15px}.contact{padding:24px;margin-bottom:42px}.lead{font-size:18px}h1{letter-spacing:-1.5px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./" aria-label="Stillwater home"><span class="mark" aria-hidden="true">≈</span>Stillwater</a>
+      <nav aria-label="Main navigation"><a href="#contact">Contact</a></nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="headline">
+        <div class="eyebrow">Personal finance, with perspective</div>
+        <h1 id="headline">A clearer view.<br>A calmer plan.</h1>
+        <p class="lead">Stillwater brings account balances, recent transactions, and spending categories together to make everyday budgeting easier to understand.</p>
+        <span class="badge">Private app · Personal use</span>
+      </section>
+      <section class="features" aria-label="Current features">
+        <article class="card"><span class="number" aria-hidden="true">01 / ACCOUNTS</span><h2 style="font-size:19px;margin:0 0 12px">See the whole picture</h2><p>Review balances and recent activity across supported linked accounts in one place.</p></article>
+        <article class="card"><span class="number" aria-hidden="true">02 / SPENDING</span><h2 style="font-size:19px;margin:0 0 12px">Know where money goes</h2><p>Organize transactions by category and understand how spending changes each month.</p></article>
+        <article class="card"><span class="number" aria-hidden="true">03 / PLANNING</span><h2 style="font-size:19px;margin:0 0 12px">Give each month a plan</h2><p>Set category budgets, track savings goals, and review progress at your own pace.</p></article>
+      </section>
+      <section class="details" aria-label="About Stillwater and data use">
+        <div><h2>Built for personal use</h2><p>Stillwater is a privately operated app for its owner's accounts. It currently runs locally on the owner's Windows computer and is not open for public registration.</p><p>Investment, loan-detail, and recurring-payment views are planned. Availability depends on the connected institution and supported data.</p></div>
+        <div><h2>Why account data is used</h2><p>Stillwater uses Plaid to connect accounts with the owner's authorization. Account information, balances, and transaction history support spending summaries and budgets. Retrieved financial data is stored locally on the owner's computer.</p><p>This public page provides app information and a support contact. It does not provide access to the app or collect bank credentials. It uses no analytics scripts or contact forms; the website host may process routine connection information.</p></div>
+      </section>
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get in touch</h2>
+        <p>For questions about Stillwater, account connections, or data use:</p>
+        <a class="email" href="mailto:stillwater.budget.support@gmail.com">stillwater.budget.support@gmail.com</a>
+        <p>Please do not email passwords, bank credentials, or account statements.</p>
+      </section>
+    </main>
+    <footer>Stillwater · A private personal-finance project</footer>
+  </div>
+</body>
+</html>
